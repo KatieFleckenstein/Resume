@@ -1,0 +1,149 @@
+import React from 'react';
+
+const MountainHeader = () => (
+  <svg className="absolute top-0 right-0 w-full h-96 text-pink-100" viewBox="0 0 400 200" preserveAspectRatio="xMaxYMin slice">
+    {/* Background Mountains */}
+    <path
+      d="M200 200 L300 80 L400 200 Z"
+      fill="currentColor"
+      fillOpacity="0.2"
+    />
+    <path
+      d="M150 200 L250 50 L350 200 Z"
+      fill="currentColor"
+      fillOpacity="0.3"
+    />
+    {/* Foreground Mountains */}
+    <path
+      d="M0 200 L100 40 L200 200 Z"
+      fill="currentColor"
+      fillOpacity="0.4"
+    />
+    {/* Snow Caps */}
+    <path
+      d="M95 50 L100 40 L105 50 Z"
+      fill="white"
+      fillOpacity="0.5"
+    />
+    <path
+      d="M245 60 L250 50 L255 60 Z"
+      fill="white"
+      fillOpacity="0.5"
+    />
+  </svg>
+);
+
+const MountainFooter = () => (
+  <svg className="absolute bottom-0 left-0 w-full h-96" viewBox="0 0 400 200" preserveAspectRatio="xMinYMax slice">
+    {/* Multiple Mountain Ranges */}
+    <path
+      d="M0 200 L80 120 L160 180 L240 100 L320 160 L400 80 L400 200 Z"
+      fill="#FDF2F8"
+      fillOpacity="0.4"
+    />
+    <path
+      d="M0 200 L100 150 L200 180 L300 130 L400 200 Z"
+      fill="#FCE7F3"
+      fillOpacity="0.3"
+    />
+    <path
+      d="M0 200 L150 170 L300 190 L400 160 L400 200 Z"
+      fill="#FBCFE8"
+      fillOpacity="0.2"
+    />
+  </svg>
+);
+
+const Resume = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white py-16 px-8 relative overflow-hidden">
+      <MountainHeader />
+      
+      {/* Header Section */}
+      <header className="max-w-4xl mx-auto mb-20 relative">
+        <div className="absolute -left-4 top-0 h-32 w-1 bg-gradient-to-b from-pink-200 to-transparent"></div>
+        <h1 className="text-6xl font-light tracking-wider mb-12 text-pink-900">
+          KATIE<br />FLECK
+        </h1>
+        <div className="h-1 w-24 bg-gradient-to-r from-pink-300 to-pink-100 mb-12"></div>
+        <p className="text-lg max-w-2xl leading-relaxed text-pink-800">
+          Hi, I'm Katie—a passionate aspiring designer with interests in graphic and brand design. 
+          I'm inspired by nature and the simple beauty it holds. My goal is to create designs that 
+          are not creative and unique, but also make a meaningful impact on the world, emphasizing 
+          the importance of authenticity, sustainability, and connection. I hope to bring my skills 
+          and enthusiasm to a team that is committed to positive change.
+        </p>
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          {/* Left Column */}
+          <div className="space-y-16">
+            {/* Background Section */}
+            <section className="group backdrop-blur-sm bg-white/30 p-6 rounded-lg">
+              <h2 className="text-2xl font-light mb-6 tracking-wide text-pink-900 relative">
+                Background
+                <div className="h-px w-full bg-gradient-to-r from-pink-200 to-transparent absolute bottom-0"></div>
+              </h2>
+              <p className="text-pink-800 leading-relaxed">
+                After graduating from the University of Colorado with two Bachelor's degrees in Psychology 
+                and Neuroscience, with a certificate in Public Health, I decided to take a leap into design 
+                and fell in love. I am currently studying for my Masters of Arts in Strategic communications 
+                at CU Boulder while competing for the Division 1 Ski Team and running the Psychological Health 
+                and Performance social media.
+              </p>
+            </section>
+
+            {/* Skills Section */}
+            <section className="group backdrop-blur-sm bg-white/30 p-6 rounded-lg">
+              <h2 className="text-2xl font-light mb-6 tracking-wide text-pink-900 relative">
+                Skills
+                <div className="h-px w-full bg-gradient-to-r from-pink-200 to-transparent absolute bottom-0"></div>
+              </h2>
+              <p className="text-pink-800 leading-relaxed">
+                My software skills include being proficient in Figma, Adobe Illustrator and Photoshop. 
+                Other skills include prototyping, and I am an extremely open minded, hard working team 
+                player motivated to complete every project I begin to the highest standard.
+              </p>
+            </section>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-16">
+            {/* Interests Section */}
+            <section className="group backdrop-blur-sm bg-white/30 p-6 rounded-lg">
+              <h2 className="text-2xl font-light mb-6 tracking-wide text-pink-900 relative">
+                Interests
+                <div className="h-px w-full bg-gradient-to-r from-pink-200 to-transparent absolute bottom-0"></div>
+              </h2>
+              <p className="text-pink-800 leading-relaxed">
+                Growing up in Whistler, Canada, I have spent a majority of my life outside. I am inspired 
+                by the sea, the sky, and everything in between. I love skiing, biking, crocheting, painting, 
+                videography and all things creative. My designing interests include graphics and brand design, 
+                and my goal is to design solutions that actually solve the problems that many have.
+              </p>
+            </section>
+
+            {/* Contact Section */}
+            <section className="group backdrop-blur-sm bg-white/30 p-6 rounded-lg">
+              <h2 className="text-2xl font-light mb-6 tracking-wide text-pink-900 relative">
+                Contact
+                <div className="h-px w-full bg-gradient-to-r from-pink-200 to-transparent absolute bottom-0"></div>
+              </h2>
+              <div className="space-y-2 text-pink-800">
+                <p className="hover:text-pink-600 transition-colors">katie.fleckenstein@colorado.edu</p>
+                <p className="hover:text-pink-600 transition-colors">530-416-1538</p>
+                <p className="hover:text-pink-600 transition-colors">Katie Fleckenstein</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <MountainFooter />
+    </div>
+  );
+};
+
+export default Resume;
